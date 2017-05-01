@@ -1,0 +1,27 @@
+body {
+	color: white;
+	font-family: $base-font-family;
+	font-size: $base-font-size;
+
+	a {
+		color: inherit;
+		font-weight: 400;
+		text-decoration: none;
+		&:hover {
+
+		}
+	}
+
+	.bg {
+		@include fixed-background();
+		@include gradient();
+	}
+	.container {
+		max-width: 62.5rem;
+		margin: 0 auto;
+	}
+	#content {
+		margin: 0 auto;
+		font-weight: 300;
+	}
+}

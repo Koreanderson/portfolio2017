@@ -1,0 +1,28 @@
+@mixin bp($point) {
+
+	// usage: @include bp(xs) { ... }
+	@if $point == below-xs {  
+		@media only screen and (min-width: 0) and (max-width: 439px) { @content; }
+	}
+	@else if $point == xs {  
+		@media only screen and (min-width: 480px) { @content; }
+	}
+	@else if $point == sm { 
+		@media only screen and (min-width: 768px) { @content; }
+	}
+	@else if $point == md { 
+		@media only screen and (min-width: 992px) { @content; }
+	}
+	@else if $point == lg { 
+		@media only screen and (min-width: 1200px) { @content; }
+	}
+	@else if $point == xl { 
+		@media only screen and (min-width: 1600px) { @content; }
+	}
+}
+
+@mixin transition($transition){
+	transition: $transition;
+	-moz-transition: $transition;
+	-webkit-transition: $transition;
+}
