@@ -1,5 +1,22 @@
 header{
+	border-bottom: 1px solid transparentize($puke, .9);
 	overflow: auto;
+	padding: .5rem 0 1rem;
+	margin-bottom: 2rem;
+	.branding {
+		float: left;
+		a {
+			font-weight: bold;
+			font-size: 1.5rem;
+			color: $darkPuke;
+			opacity: .7;
+			text-transform: uppercase;
+			@include transition(.3s linear all);
+			&:hover {
+				opacity: .9;
+			}
+		}
+	}
 	nav{
 		overflow: auto;
 		width: auto;
@@ -10,6 +27,16 @@ header{
 		float: left;
 		list-style: none;
 		padding: .5rem;
+		a {
+			font-weight: lighter;
+			border-bottom: 1px solid transparentize($puke, .8);
+			@include transition(.1s linear all);
+			line-height: 1.3;
+			padding-bottom: .1rem;
+			&:hover {
+				border-bottom: 1px solid $puke;
+			}
+		}
 	}
 
 }

@@ -1,5 +1,21 @@
 header {
-  overflow: auto; }
+  border-bottom: 1px solid rgba(85, 134, 140, 0.1);
+  overflow: auto;
+  padding: .5rem 0 1rem;
+  margin-bottom: 2rem; }
+  header .branding {
+    float: left; }
+    header .branding a {
+      font-weight: bold;
+      font-size: 1.5rem;
+      color: #00808f;
+      opacity: .7;
+      text-transform: uppercase;
+      transition: 0.3s linear all;
+      -moz-transition: 0.3s linear all;
+      -webkit-transition: 0.3s linear all; }
+      header .branding a:hover {
+        opacity: .9; }
   header nav {
     overflow: auto;
     width: auto;
@@ -9,11 +25,24 @@ header {
     float: left;
     list-style: none;
     padding: .5rem; }
+    header li a {
+      font-weight: lighter;
+      border-bottom: 1px solid rgba(85, 134, 140, 0.2);
+      transition: 0.1s linear all;
+      -moz-transition: 0.1s linear all;
+      -webkit-transition: 0.1s linear all;
+      line-height: 1.3;
+      padding-bottom: .1rem; }
+      header li a:hover {
+        border-bottom: 1px solid #55868c; }
 
 body {
   color: white;
   font-family: "Montserrat", "Helvetica", "Ariel", sans-serif;
   font-size: 16px; }
+  body p {
+    font-weight: lighter;
+    line-height: 1.5; }
   body a {
     color: inherit;
     font-weight: 400;
@@ -36,8 +65,11 @@ body {
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00808f', endColorstr='#b2cbc6',GradientType=1 );
     /* IE6-9 fallback on horizontal gradient */ }
   body .container {
-    max-width: 62.5rem;
-    margin: 0 auto; }
+    margin: 0 auto;
+    max-width: 62.5rem; }
+  body .row {
+    overflow: auto;
+    width: 100%; }
   body #content {
     margin: 0 auto;
     font-weight: 300; }
@@ -66,10 +98,13 @@ body #content {
       border-bottom: 1px solid white; }
 
 .project-page {
-  color: #00808f; }
+  color: #00808f;
+  padding-bottom: 5rem; }
   .project-page h1 {
     margin: 0; }
   .project-page p {
+    color: #555;
+    font-weight: lighter;
     margin: .5rem 0; }
   .project-page img {
     border: 1px solid white;
@@ -81,6 +116,14 @@ body #content {
     @media only screen and (min-width: 768px) {
       .project-page img {
         border-radius: 6px; } }
+  .project-page .writeup,
+  .project-page .afterword {
+    width: 90%; }
+    .project-page .writeup p,
+    .project-page .afterword p {
+      font-size: .9rem; }
+  .project-page .afterword {
+    margin-top: 1rem; }
   .project-page .half {
     width: 100%;
     float: left; }

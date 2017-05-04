@@ -2,6 +2,10 @@ body {
 	color: white;
 	font-family: $base-font-family;
 	font-size: $base-font-size;
+	p {
+		font-weight: lighter;
+		line-height: 1.5;
+	}
 
 	a {
 		color: inherit;
@@ -17,8 +21,12 @@ body {
 		@include gradient();
 	}
 	.container {
-		max-width: 62.5rem;
 		margin: 0 auto;
+		max-width: 62.5rem;
+	}
+	.row {
+		overflow: auto;
+		width: 100%;
 	}
 	#content {
 		margin: 0 auto;

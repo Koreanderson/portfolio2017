@@ -1,10 +1,12 @@
 .project-page {
-
 	color: $darkPuke;
+	padding-bottom: 5rem;
 	h1 {
 		margin: 0;
 	}
 	p {
+		color: $bodyTextColor;
+		font-weight: lighter;
 		margin: .5rem 0;
 	}
 	img {
@@ -18,7 +20,17 @@
 			border-radius: 6px;
 		}
 	}
+	.writeup, 
+	.afterword {
+		width: 90%;
+		p {
+			font-size: .9rem;
+		}
+	}
+	.afterword { 
+		margin-top: 1rem;
 
+	}
 	.half {
 		width: 100%;
 		float: left;

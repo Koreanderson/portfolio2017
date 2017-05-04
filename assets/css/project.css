@@ -1,18 +1,17 @@
 /*
 Error: Undefined variable: "$darkPuke".
-        on line 3 of sass/project.scss
+        on line 2 of sass/project.scss
 
 1: .project-page {
-2: 
-3: 	color: $darkPuke;
+2: 	color: $darkPuke;
+3: 	padding-bottom: 5rem;
 4: 	h1 {
 5: 		margin: 0;
 6: 	}
 7: 	p {
-8: 		margin: .5rem 0;
 
 Backtrace:
-sass/project.scss:3
+sass/project.scss:2
 /usr/local/lib/ruby/gems/2.2.0/gems/sass-3.4.20/lib/sass/script/tree/variable.rb:49:in `_perform'
 /usr/local/lib/ruby/gems/2.2.0/gems/sass-3.4.20/lib/sass/script/tree/node.rb:50:in `perform'
 /usr/local/lib/ruby/gems/2.2.0/gems/sass-3.4.20/lib/sass/tree/visitors/perform.rb:395:in `visit_prop'
@@ -65,4 +64,4 @@ sass/project.scss:3
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined variable: \"$darkPuke\".\A         on line 3 of sass/project.scss\A \A 1: .project-page {\A 2: \A 3: 	color: $darkPuke;\A 4: 	h1 {\A 5: 		margin: 0;\A 6: 	}\A 7: 	p {\A 8: 		margin: .5rem 0;"; }
+  content: "Error: Undefined variable: \"$darkPuke\".\A         on line 2 of sass/project.scss\A \A 1: .project-page {\A 2: 	color: $darkPuke;\A 3: 	padding-bottom: 5rem;\A 4: 	h1 {\A 5: 		margin: 0;\A 6: 	}\A 7: 	p {"; }
