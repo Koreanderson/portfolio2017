@@ -1,13 +1,15 @@
 header{
-	border-bottom: 1px solid transparentize($puke, .9);
+	//border-bottom: 1px solid transparentize($puke, .9);
 	overflow: auto;
 	padding: .5rem 0 1rem;
+	padding: 5rem 0 1rem;
 	margin-bottom: 2rem;
 	.branding {
 		float: left;
 		a {
 			font-weight: bold;
 			font-size: 1.5rem;
+			font-size: 2rem;
 			color: $darkPuke;
 			opacity: .7;
 			text-transform: uppercase;
@@ -19,14 +21,13 @@ header{
 	}
 	nav{
 		overflow: auto;
-		width: auto;
-		float: right;
+		width: 100%;
 	}
 	li{
 		font-weight: lighter;
 		float: left;
 		list-style: none;
-		padding: .5rem;
+		padding: .5rem 1rem .5rem 0;
 		a {
 			font-weight: lighter;
 			border-bottom: 1px solid transparentize($puke, .8);
