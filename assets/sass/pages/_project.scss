@@ -1,13 +1,6 @@
 .project-page {
 	color: $darkPuke;
 	padding-bottom: 5rem;
-	h1 {
-	}
-	p {
-		color: $bodyTextColor;
-		font-weight: lighter;
-		margin: .5rem 0;
-	}
 	img {
 		border: 1px solid white;
 		box-shadow: 0 2px 7px transparentize(black, .8);
@@ -19,18 +12,22 @@
 			border-radius: 6px;
 		}
 	}
-	.writeup, 
+	.project-intro,
 	.afterword {
-		margin: 4rem auto;
-		width: 65%;
-		p {
-			font-size: .9rem;
-			line-height: 1.8;
+		padding: 1rem 0;
+		.row {
+			border-left: 1px solid transparentize($puke, .9);
+			margin: 4rem 0;
+			padding-left: 2rem;
+			width: 65%;
 		}
-	}
-	.afterword { 
-		margin-top: 1rem;
-
+		p {
+			color: $bodyTextColor;
+			font-size: .9rem;
+			font-weight: lighter;
+			line-height: 1.8;
+			margin: .5rem 0;
+		}
 	}
 	.half {
 		width: 100%;

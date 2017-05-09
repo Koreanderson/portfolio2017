@@ -1,32 +1,29 @@
-body{
-	#home {
-		padding: 5rem 0;
+.homepage {
+	padding: 5rem 0;
 
-		h1 {
-			text-transform: uppercase;
+	h1 {
+		text-transform: uppercase;
+	}
+	.title {
+		font-weight: normal;
+	}
+	.intro {
+		font-weight: 300;
+		line-height: 1.5;
+	}
+	.projects {
+		list-style: none;
+		padding: 1rem 0;
+	}
+	li {
+		margin: .5rem 0;
+	}
+	a {
+		border-bottom: 1px solid transparentize(white, .8);
+		@include transition(.1s linear all);
+		padding-bottom: .1rem;
+		&:hover {
+			border-bottom: 1px solid white;
 		}
-		.title {
-			font-weight: normal;
-		}
-		.intro {
-			font-weight: 300;
-			line-height: 1.5;
-		}
-		.projects {
-			list-style: none;
-			padding: 1rem 0;
-		}
-		li {
-			margin: .5rem 0;
-		}
-		a {
-			border-bottom: 1px solid transparentize(white, .8);
-			@include transition(.1s linear all);
-			padding-bottom: .1rem;
-			&:hover {
-				border-bottom: 1px solid white;
-			}
-		}
-
 	}
 }

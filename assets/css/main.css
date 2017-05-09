@@ -27,7 +27,7 @@ header {
     padding: .5rem 1rem .5rem 0; }
     header li a {
       font-weight: lighter;
-      border-bottom: 1px solid rgba(85, 134, 140, 0.2);
+      border-bottom: 1px solid rgba(85, 134, 140, 0.1);
       transition: 0.1s linear all;
       -moz-transition: 0.1s linear all;
       -webkit-transition: 0.1s linear all;
@@ -74,36 +74,32 @@ body {
     margin: 0 auto;
     font-weight: 300; }
 
-body #home {
+.homepage {
   padding: 5rem 0; }
-  body #home h1 {
+  .homepage h1 {
     text-transform: uppercase; }
-  body #home .title {
+  .homepage .title {
     font-weight: normal; }
-  body #home .intro {
+  .homepage .intro {
     font-weight: 300;
     line-height: 1.5; }
-  body #home .projects {
+  .homepage .projects {
     list-style: none;
     padding: 1rem 0; }
-  body #home li {
+  .homepage li {
     margin: .5rem 0; }
-  body #home a {
+  .homepage a {
     border-bottom: 1px solid rgba(255, 255, 255, 0.2);
     transition: 0.1s linear all;
     -moz-transition: 0.1s linear all;
     -webkit-transition: 0.1s linear all;
     padding-bottom: .1rem; }
-    body #home a:hover {
+    .homepage a:hover {
       border-bottom: 1px solid white; }
 
 .project-page {
   color: #00808f;
   padding-bottom: 5rem; }
-  .project-page p {
-    color: #555;
-    font-weight: lighter;
-    margin: .5rem 0; }
   .project-page img {
     border: 1px solid white;
     box-shadow: 0 2px 7px rgba(0, 0, 0, 0.2);
@@ -114,16 +110,22 @@ body #home {
     @media only screen and (min-width: 768px) {
       .project-page img {
         border-radius: 6px; } }
-  .project-page .writeup,
+  .project-page .project-intro,
   .project-page .afterword {
-    margin: 4rem auto;
-    width: 65%; }
-    .project-page .writeup p,
+    padding: 1rem 0; }
+    .project-page .project-intro .row,
+    .project-page .afterword .row {
+      border-left: 1px solid rgba(85, 134, 140, 0.1);
+      margin: 4rem 0;
+      padding-left: 2rem;
+      width: 65%; }
+    .project-page .project-intro p,
     .project-page .afterword p {
+      color: #555;
       font-size: .9rem;
-      line-height: 1.8; }
-  .project-page .afterword {
-    margin-top: 1rem; }
+      font-weight: lighter;
+      line-height: 1.8;
+      margin: .5rem 0; }
   .project-page .half {
     width: 100%;
     float: left; }

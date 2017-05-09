@@ -30,7 +30,7 @@ header{
 		padding: .5rem 1rem .5rem 0;
 		a {
 			font-weight: lighter;
-			border-bottom: 1px solid transparentize($puke, .8);
+			border-bottom: 1px solid transparentize($puke, .9);
 			@include transition(.1s linear all);
 			line-height: 1.3;
 			padding-bottom: .1rem;
