@@ -68,7 +68,6 @@ body {
     margin: 0 auto;
     max-width: 62.5rem; }
   body .row {
-    overflow: auto;
     width: 100%; }
   body #content {
     margin: 0 auto;
