@@ -1,13 +1,15 @@
 .project-page {
-	color: $darkPuke;
 	padding-bottom: 5rem;
+	h1, h2, h3, a {
+		color: $blue;
+	}
 	img {
 		border: 1px solid white;
 		box-shadow: 0 2px 7px transparentize(black, .8);
 		box-sizing: border-box;
 		margin: 1rem 0;
-		width: 100%;
 		max-width: 1000px;
+		width: 100%;
 		@include bp(sm){
 			border-radius: 6px;
 		}
@@ -16,7 +18,7 @@
 	.afterword {
 		padding: 1rem 0;
 		.row {
-			border-left: 1px solid transparentize($puke, .9);
+			border-left: 1px solid transparentize($blue, .9);
 			margin: 4rem 0;
 			padding-left: 2rem;
 			width: 65%;
@@ -30,11 +32,11 @@
 		}
 	}
 	.half {
-		width: 100%;
 		float: left;
+		width: 100%;
 		@include bp(sm){
-			width: 49%;
 			margin-right: 2%;
+			width: 49%;
 			&:last-child {
 				margin-right: 0;
 			}
