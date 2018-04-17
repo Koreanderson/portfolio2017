@@ -1,11 +1,8 @@
-@import
-	'modules/typography',
-	'modules/colors',
-	'modules/mixins',
-	'modules/background',
-	'modules/header',
-	'modules/body',
-
-	'pages/home',
-	'pages/project'
-;
+@import 'modules/typography';
+@import 'modules/colors';
+@import 'modules/mixins';
+@import 'modules/background';
+@import 'modules/header';
+@import 'modules/body';
+@import 'pages/home';
+@import 'pages/project';
