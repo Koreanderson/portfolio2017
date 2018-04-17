@@ -73,6 +73,7 @@ body {
     font-weight: 300; }
 
 .homepage {
+  color: white;
   padding: 5rem 0; }
   .homepage h1 {
     text-transform: uppercase; }
