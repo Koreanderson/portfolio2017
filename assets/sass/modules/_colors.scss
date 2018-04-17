@@ -2,11 +2,18 @@ $puke: #55868c;
 $darkPuke: #00808f;
 $bodyTextColor: #555;
 
+$blue: #2d5dc6;
+$light-blue: #56c4e4;
+
+
+$start-gradient: $blue;
+$end-gradient: $light-blue;
+
 @mixin gradient(){
 	background: #00808f; /* Old browsers */
-	background: -moz-linear-gradient(30deg, #00808f 0%, #b2cbc6 100%); /* FF3.6-15 */
-	background: -webkit-linear-gradient(30deg, #00808f 0%,#b2cbc6 100%); /* Chrome10-25,Safari5.1-6 */
-	background: linear-gradient(30deg, #00808f 0%,#b2cbc6 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00808f', endColorstr='#b2cbc6',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+	background: -moz-linear-gradient(30deg, $start-gradient 0%, $end-gradient 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(30deg, $start-gradient 0%, $end-gradient 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(30deg, $start-gradient 0%, $end-gradient 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$start-gradient', endColorstr='$end-gradient',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
 }
 
