@@ -1,3 +1,8 @@
+@keyframes fadeIn {
+  50% {
+    opacity: .0; }
+  100% {
+    opacity: .8; } }
 header {
   overflow: auto;
   padding: .5rem 0 1rem;
@@ -87,14 +92,26 @@ body {
     padding: 1rem 0; }
   .homepage li {
     margin: .5rem 0; }
-  .homepage a {
-    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
-    transition: 0.1s linear all;
-    -moz-transition: 0.1s linear all;
-    -webkit-transition: 0.1s linear all;
-    padding-bottom: .1rem; }
-    .homepage a:hover {
-      border-bottom: 1px solid white; }
+    .homepage li a {
+      transition: 0.1s linear all;
+      -moz-transition: 0.1s linear all;
+      -webkit-transition: 0.1s linear all;
+      animation: fadeIn 1s ease-in;
+      padding-bottom: .1rem;
+      opacity: .8; }
+      .homepage li a:hover {
+        border-bottom: 1px solid white;
+        opacity: 1; }
+  .homepage .item-1 a {
+    animation-delay: 0.1s; }
+  .homepage .item-2 a {
+    animation-delay: 0.2s; }
+  .homepage .item-3 a {
+    animation-delay: 0.3s; }
+  .homepage .item-4 a {
+    animation-delay: 0.4s; }
+  .homepage .item-5 a {
+    animation-delay: 0.5s; }
 
 .project-page {
   padding-bottom: 5rem; }

@@ -17,13 +17,20 @@
 	}
 	li {
 		margin: .5rem 0;
+		a {
+			@include transition(.1s linear all);
+			animation: fadeIn 1s ease-in;
+			padding-bottom: .1rem;
+			opacity: .8;
+			&:hover {
+				border-bottom: 1px solid white;
+				opacity: 1;
+			}
+		}
 	}
-	a {
-		border-bottom: 1px solid transparentize(white, .8);
-		@include transition(.1s linear all);
-		padding-bottom: .1rem;
-		&:hover {
-			border-bottom: 1px solid white;
+	@for $li from 1 through 5 {
+		.item-#{$li} a{
+			animation-delay: .1s * $li;
 		}
 	}
 }
