@@ -21,7 +21,7 @@
 			@include transition(.1s linear all);
 			animation: fadeIn 1s ease-in;
 			padding-bottom: .1rem;
-			opacity: .8;
+			opacity: .7;
 			&:hover {
 				border-bottom: 1px solid white;
 				opacity: 1;
@@ -31,6 +31,10 @@
 	@for $li from 1 through 5 {
 		.item-#{$li} a{
 			animation-delay: .1s * $li;
+		}
+	}
+	.contact {
+		a {
 		}
 	}
 }

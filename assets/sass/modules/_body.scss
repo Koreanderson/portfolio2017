@@ -10,8 +10,10 @@ body {
 		color: inherit;
 		font-weight: 400;
 		text-decoration: none;
+		opacity: .7;
 		&:hover {
-
+			border-bottom: 1px solid white;
+			opacity: 1;
 		}
 	}
 
